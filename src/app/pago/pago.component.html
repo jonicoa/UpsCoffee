@@ -1,0 +1,58 @@
+<div style="padding-top: 5%; padding-left: 3%;">
+  <h1 style="font-size: 350%; color: #2F4156;">Pago y Recogida</h1>
+</div>
+<div class="row">
+  <div class="col-6">
+    <form>
+
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <input type="email" class="form-control" id="email" placeholder="Ingresa tu email">
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="2" placeholder="Escribe tu mensaje"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="horario">Horario de Recogida:</label>
+        <input type="time" class="form-control" id="horario" placeholder="Ingresa tu horario">
+      </div>
+
+      <div class="mb-3">
+        <h3 style="color: #2F4156;">Pago con Tarjeta</h3>
+        <div class="d-flex align-items-center mb-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" width="30">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="MasterCard" width="30" class="ms-2">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" width="30" class="ms-2">
+        </div>
+        <label for="tarjeta" class="form-label">Número de Tarjeta</label>
+        <input type="text" class="form-control" id="tarjeta" placeholder="**** **** **** ****">
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <label for="expiracion" class="form-label">Fecha de Expiración</label>
+          <input type="month" class="form-control" id="expiracion">
+        </div>
+        <div class="col-md-6">
+          <label for="cvv" class="form-label">CVV</label>
+          <input type="text" class="form-control" id="cvv" placeholder="123">
+        </div>
+      </div>
+
+    </form>
+  </div>
+  <div class="col-4">
+    <div class="info-pago">
+      <h3>Resumen de Compra</h3>
+      <p>Total de productos: {{productos.length}}</p>
+      <p>Total a pagar: ${{ calcularTotal() }} MXN</p>
+
+      <button class="boton-pago" [disabled]="productos.length === 0">Pagar Ahora</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<div style="padding-top: 5%; padding-left: 3%;">
+  <h1 style="font-size: 350%; color: #2F4156;">Carrito</h1>
+</div>
+
+<div class="container" style="min-height: 68vh;">
+  <div class="row">
+    <!-- Columna Izquierda: Productos del Carrito -->
+    <div class="col-md-8">
+      @for (producto of productosAgrupadosArray; track producto.id) {
+        <div class="producto-carrito">
+          <img [src]="producto.image" class="imagen-carrito" alt="{{producto.name}}">
+          <div class="detalle-carrito">
+            <h5>{{producto.name}}</h5>
+            <p>{{producto.description}}</p>
+            <p class="precio-carrito">${{producto.price}} MXN</p>
+            <p class="cantidad-carrito">Cantidad: {{producto.cantidad}}</p>
+          </div>
+          <button class="boton-eliminar" (click)="eliminarProducto(producto)">Eliminar</button>
+        </div>
+      }
+    </div>
+
+
+
+    <!-- Columna Derecha: Información de Pago -->
+    <div class="col-md-4">
+      <div class="info-pago">
+        <h3>Resumen de Compra</h3>
+        <p>Total de productos: {{productos.length}}</p>
+        <p>Total a pagar: ${{ calcularTotal() }} MXN</p>
+
+        <a routerLink="/pago">
+          <button class="boton-pago" [disabled]="productos.length === 0">Proceder al Pago</button>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</div>

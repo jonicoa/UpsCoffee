@@ -1,0 +1,72 @@
+<div class="banner"></div>
+
+<!-- Selector de categorías -->
+<div class="container mt-4">
+  <div class="dropdown mb-4">
+    <button
+      class="btn btn-secondary dropdown-toggle"
+      type="button"
+      id="dropdownMenuButton"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      <i class="bi bi-filter"></i> {{ categoriaSeleccionada || 'Categorías' }}
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <li>
+        <a class="dropdown-item"  (click)="filtrarPorCategoria('')">
+          <i class="bi bi-list"></i> Todas las categorías
+        </a>
+      </li>
+      <li *ngFor="let categoria of categorias">
+        <a class="dropdown-item" (click)="filtrarPorCategoria(categoria)">
+          <i class="bi {{ iconosCategorias[categoria] }}"></i> {{ categoria }}
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<!-- Lista de productos -->
+<div class="container mt-4 p-0">
+  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+    @for (producto of productosFiltrados; track $index) {
+      <div class="col">
+        <div class="card">
+          <img [src]="producto.image" class="card-img-top" alt="{{producto.name}}">
+          <div class="card-body">
+            <h5 class="card-title">{{producto.name}}</h5>
+            <p class="card-text">{{producto.description}}</p>
+            <p class="precio">${{producto.price}} MXN</p>
+
+            <!-- Selector de cantidad -->
+            <input
+              type="number"
+              [(ngModel)]="cantidadSeleccionada[producto.id]"
+              min="1"
+              max="50"
+              class="input-cantidad"
+              placeholder="1"
+            />
+
+          </div>
+        </div>
+
+        <!-- Botón para agregar -->
+        <button
+          (click)="agregarAlCarrito(producto, cantidadSeleccionada[producto.id] || 1)"
+          class="boton-tarjetas"
+          [ngClass]="{'agregado': productosAgregados[producto.id]}"
+        >
+          {{ productosAgregados[producto.id] ? '¡Agregado!' : 'Agregar al carrito' }}
+        </button>
+
+      </div>
+      @if ($index % 2 == 1) {
+        <br>
+      }
+    }
+  </div>
+</div>

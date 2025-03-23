@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+
+
+}
+
+app-inicio {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* Asegura el comportamiento de las animaciones */

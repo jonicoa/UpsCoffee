@@ -1,0 +1,177 @@
+.banner {
+  height: 58vh;
+  width: 100%;
+  background: url('/menu.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.precio{
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.744), -3px -3px 5px rgba(0, 0, 0, 0.771);
+}
+
+
+
+/* Estilo para las tarjetas */
+
+
+.card-body {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro para la descripción */
+  color: white;
+  opacity: 0; /* Ocultar la descripción por defecto */
+  visibility: hidden; /* Ocultar la descripción por defecto */
+  padding: 20px;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03); /* Efecto de aumentar la tarjeta al pasar el ratón */
+
+}
+
+.card:hover .card-body {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-body{
+  height: 100%;
+}
+
+
+.card-img-top {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+  height: 220px; /* Ajusta la altura según lo que necesites */
+  object-fit: cover;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  margin: 0px; /* Espacio para el botón */
+}
+
+.boton-tarjetas {
+  display: block;
+  margin: 10px auto 0 auto; /* Centrado debajo de la tarjeta */
+  background-color: #2F4156;
+  border-color: #2F4156;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 80%; /* Ajusta el ancho según necesites */
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+
+}
+
+.boton-tarjetas:hover {
+  background-color: #5F84A2;
+}
+
+.boton-tarjetas.agregado {
+  transform: scale(1.05);
+  background-color: transparent;
+  border-color: #5F84A2;
+  color: #5F84A2;
+
+}
+.dropdown-toggle{
+  width: 20%;
+  background-color: #2F4156;
+  font-size: 18px;
+
+}
+
+.dropdown-toggle:active{
+background-color:#5F84A2;
+}
+
+.dropdown-item{
+  color:#2F4156;
+  cursor: pointer;
+
+
+
+}
+
+.dropdown-item:hover{
+  background-color: #5f84a268;
+}
+
+.dropdown-menu{
+  background-color: white;
+  width: 18%;
+  font-size: 18px;
+
+}
+
+.input-cantidad {
+  width: 50px; /* Hace que el input sea pequeño */
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white; /* Texto en blanco */
+  border: 1px solid #ffffff; /* Borde oscuro */
+  border-radius: 5px; /* Bordes redondeados */
+  text-align: center; /* Centra el texto */
+  font-size: 14px; /* Tamaño de fuente */
+  outline: none; /* Quita el borde de enfoque */
+  transition: 0.3s ease-in-out;
+}
+
+.input-cantidad:focus {
+  background-color: rgba(0, 0, 0, 0.7); /* Oscurece un poco más al hacer clic */
+  border-color: #666;
+}
+
+
+  @media screen and (max-width:620px) {
+    .banner {
+      height: 25vh; /* Reduce la altura en pantallas pequeñas */
+      background-size:contain; /* Cambia a 'contain' para evitar cortes */
+    }
+    .spacer{
+      display: none;
+    }
+
+    .card-img-top{
+      height: 140px;
+      width: 100%;
+    }
+
+    .dropdown-toggle{
+      width: 45%;
+    }
+
+    .dropdown-menu{
+      width: 55%;
+
+    }
+
+    .card{
+      max-width: 200px;
+    }
+
+
+}
