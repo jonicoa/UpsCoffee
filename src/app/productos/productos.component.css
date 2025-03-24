@@ -1,7 +1,7 @@
 .banner {
   height: 58vh;
   width: 100%;
-  background: url('/menu.jpg') no-repeat center center;
+  background: url('/UpsCoffee/menu.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
