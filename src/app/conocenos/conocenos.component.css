@@ -38,4 +38,10 @@
     text-align: justify;
   }
 
+  .col-md-6{
+
+      width: 100%;
+    }
+
+
 }

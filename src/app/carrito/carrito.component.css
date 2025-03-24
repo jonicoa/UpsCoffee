@@ -58,6 +58,10 @@
   background-color:#2F4156;
   color: #ffffff;
 }
+.titulo{
+  padding-top: 5%;
+
+}
 
 /* Estilos para la Información de Pago */
 .info-pago {
@@ -86,5 +90,13 @@ background-color: #2F4156;
 
 .boton-pago:hover {
   background-color: #5f84a2a1;
+
+}
+
+@media screen and (max-width:700px) {
+  .titulo{
+    padding-top: 20%;
+
+  }
 
 }

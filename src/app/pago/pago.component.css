@@ -5,6 +5,9 @@
   margin: 0%;
 
 }
+.titulo{
+  padding-top: 5%;
+}
 .info-pago {
   background-color: #2F4156;
     padding: 20px;
@@ -44,4 +47,15 @@
   .boton-pago:hover {
     background-color: #5f84a2a1;
 
+  }
+
+  @media screen and (max-width:700px) {
+    .titulo{
+      padding-top: 20%;
+    }
+
+    .spacer{
+      padding-top: 10%;
+      padding-bottom: 5%;
+    }
   }

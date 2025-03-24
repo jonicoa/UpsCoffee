@@ -109,7 +109,7 @@ footer {
   height: 8vh;
 }
 
-@media screen and (max-width:620px) {
+@media screen and (max-width:700px) {
 
 .logo{
   font-size: 3vh;
@@ -137,7 +137,7 @@ display: none;
     right: 0;
     bottom: 0;
     background-color: #2F4156;
-    padding: 2rem;
+    padding: 1.3rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     z-index: 999;
   }
@@ -147,13 +147,22 @@ display: none;
     align-items: center;
     padding: 2rem;
     gap: 4rem;
-    font-size: 25px;
+    font-size: 20px;
 
 
   }
   .iconocarro{
-    font-size: 40px;
+    font-size: 30px;
   }
+
+  header.sticky{
+    height: 7.5vh ;
+  }
+  header{
+    height: 8.5vh;
+  }
+
+
 
 
 
