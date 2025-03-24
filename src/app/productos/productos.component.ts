@@ -15,7 +15,7 @@ export class ProductosComponent {
     { "id": 1, "name": "Pizza", "description": "Deliciosa pizza con queso y pepperoni.", "price": 150, "image": "/pizza.jpg", "type": "Snack" },
     { "id": 2, "name": "Hamburguesa", "description": "Hamburguesa con carne jugosa", "price": 120, "image": "/hamburguesa.jpg", "type": "Snack" },
     { "id": 3, "name": "Frappe", "description": "Frappe muy bueno.", "price": 90, "image": "/frappe.jpg", "type": "Bebida" },
-    { "id": 4, "name": "Enchiladas", "description": "Enchiladas del tipo a escoger.", "price": 200, "image": "/enchiladas.jpg", "type": "Mexicana" },
+    { "id": 4, "name": "Enchiladas", "description": "Enchiladas del tipo a escoger.", "price": 200, "image": "/UpsCoffee/enchiladas.jpg", "type": "Mexicana" },
     { "id": 5, "name": "Ensalada", "description": "Ensalada fresca con ingredientes naturales.", "price": 80, "image": "/ensalada.jpg", "type": "Saludable" },
     { "id": 6, "name": "Torta", "description": "Torta rellena con carne, queso y salsa.", "price": 110, "image": "/torta.jpg", "type": "Mexicana" },
     { "id": 7, "name": "Chilaquiles", "description": "Chilaquiles con salsa verde o roja, acompañados de pollo o huevo.", "price": 130, "image": "/chilaquiles.jpg", "type": "Mexicana" },
