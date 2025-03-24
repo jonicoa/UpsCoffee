@@ -12,7 +12,7 @@ import { RouterLink } from '@angular/router';
 })
 export class ProductosComponent {
   productos: Producto[] = [
-    { "id": 1, "name": "Pizza", "description": "Deliciosa pizza con queso y pepperoni.", "price": 150, "image": "/UpsCoffee/pizza.jpg", "type": "Snack" },
+    { "id": 1, "name": "Pizza", "description": "Deliciosa pizza con queso y pepperoni.", "price": 150, "image": "/pizza.jpg", "type": "Snack" },
     { "id": 2, "name": "Hamburguesa", "description": "Hamburguesa con carne jugosa", "price": 120, "image": "/UpsCoffee/hamburguesa.jpg", "type": "Snack" },
     { "id": 3, "name": "Frappe", "description": "Frappe muy bueno.", "price": 90, "image": "/UpsCoffee/frappe.jpg", "type": "Bebida" },
     { "id": 4, "name": "Enchiladas", "description": "Enchiladas del tipo a escoger.", "price": 200, "image": "/UpsCoffee/enchiladas.jpg", "type": "Mexicana" },

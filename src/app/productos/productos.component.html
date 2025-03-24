@@ -35,7 +35,8 @@
     @for (producto of productosFiltrados; track $index) {
       <div class="col">
         <div class="card">
-          <img [src]="producto.image" class="card-img-top" alt="{{producto.name}}">
+          <img [src]="producto.image" class="card-img-top" alt="{{producto.name}}" >
+          <i class="bi bi-plus-circle mas"></i>
           <div class="card-body">
             <h5 class="card-title">{{producto.name}}</h5>
             <p class="card-text">{{producto.description}}</p>
