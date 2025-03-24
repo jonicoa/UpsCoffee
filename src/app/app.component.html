@@ -3,9 +3,11 @@
     <a routerLink="/inicio"><i class="fas fa-mug-hot">UpsCoffee</i></a>
   </div>
 
+ @if (!this.MenuOpen) {
   <i class="bi bi-list menu-icon hamburguesa" (click)="toggleMenu()"></i>
-
-
+ } @else {
+  <i style="color: white;" class="bi bi-list menu-icon hamburguesa" (click)="toggleMenu()"></i>
+ }
   <nav [ngClass]="{ 'active': MenuOpen }">
     <ul class="nav-list">
       <li><a routerLink="/productos">

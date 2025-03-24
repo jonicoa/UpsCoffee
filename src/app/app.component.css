@@ -6,6 +6,8 @@
 
 .hamburguesa{
   display: none;
+  color:#2F4156;
+  transition: 1.4s;
 }
 
 nav{
@@ -36,6 +38,9 @@ header.sticky{
   text-shadow: none;
   height: 10vh;
 
+}
+header.sticky .hamburguesa{
+  color: #ffffff;
 }
 
 .abrir-menu{
@@ -119,7 +124,6 @@ footer {
   display: block;
   font-size: 2.5rem;
   z-index: 1000;
-  color: black;
 }
 nav{
 display: none;
@@ -136,12 +140,14 @@ display: none;
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: #2F4156;
+    background-color: #2f4156f2;
     padding: 1.3rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     z-index: 999;
   }
   .nav-list{
+
+
     margin-top: 5vh;
     flex-direction: column;
     align-items: center;

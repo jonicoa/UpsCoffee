@@ -18,7 +18,7 @@ export class ProductosComponent {
     { "id": 4, "name": "Enchiladas", "description": "Enchiladas del tipo a escoger.", "price": 200, "image": "/UpsCoffee/enchiladas.jpg", "type": "Mexicana" },
     { "id": 5, "name": "Ensalada", "description": "Ensalada fresca con ingredientes naturales.", "price": 80, "image": "/UpsCoffee/ensalada.jpg", "type": "Saludable" },
     { "id": 6, "name": "Torta", "description": "Torta rellena con carne, queso y salsa.", "price": 110, "image": "/UpsCoffee/torta.jpg", "type": "Mexicana" },
-    { "id": 7, "name": "Chilaquiles", "description": "Chilaquiles con salsa verde o roja, acompañados de pollo o huevo.", "price": 130, "image": "/UpsCoffee/chilaquiles.jpg", "type": "Mexicana" },
+    { "id": 7, "name": "Chilaquiles", "description": "Chilaquiles con salsa verde o roja.", "price": 130, "image": "/UpsCoffee/chilaquiles.jpg", "type": "Mexicana" },
     { "id": 8, "name": "Tacos", "description": "Tacos al pastor con piña y cebolla.", "price": 70, "image": "/UpsCoffee/tacos.jpg", "type": "Mexicana" },
     { "id": 9, "name": "Sopa", "description": "Sopa de pollo con verduras y fideos.", "price": 85, "image": "/UpsCoffee/sopa.jpg", "type": "Saludable" },
     { "id": 10, "name": "Huevos", "description": "Huevos estrellados muy ricos.", "price": 45, "image": "/UpsCoffee/huevos.jpg", "type": "Desayuno" },
