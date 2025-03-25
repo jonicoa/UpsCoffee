@@ -4,6 +4,7 @@ import { CarritoService } from './carrito.service';
 import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
 import { animate, style, transition, trigger } from '@angular/animations';
+import { Router, Event, NavigationEnd } from '@angular/router';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, RouterLink,CommonModule],
@@ -22,6 +23,15 @@ import { animate, style, transition, trigger } from '@angular/animations';
   ]
 })
 export class AppComponent implements OnInit  {
+
+
+  constructor(private router: Router, private carritoService: CarritoService) {
+    this.router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationEnd) {
+        window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplazamiento suave al inicio
+      }
+    });
+  }
   MenuOpen = false;
 
   toggleMenu() {
@@ -36,7 +46,6 @@ export class AppComponent implements OnInit  {
     this.isSticky = window.scrollY > 45;
   }
 
-  constructor(private carritoService: CarritoService) {}
   ngOnInit(): void {
     this.cantidadProductos$ = this.carritoService.obtenerCantidadProductos();
   }

@@ -125,26 +125,31 @@ footer {
   font-size: 2.5rem;
   z-index: 1000;
 }
-nav{
-display: none;
+
+nav {
+  opacity: 0;
+  position: absolute;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 110vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2f4156f2;
+  padding: 1.3rem;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  pointer-events: none; /* Desactiva la interacción cuando está cerrado */
 }
-  nav.active{
-    opacity: 1;
-    display: block;
-    position: absolute;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    height: 110vh;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #2f4156f2;
-    padding: 1.3rem;
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
-    z-index: 999;
-  }
+
+nav.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto; /* Activa la interacción cuando está abierto */
+}
   .nav-list{
 
 

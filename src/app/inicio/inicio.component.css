@@ -36,7 +36,18 @@
 
 }
 
-@media screen and (max-width:620px) {
+.promocion3{
+  height: 70vh ;
+  width: 95%;
+  margin: 2.5%;
+  box-shadow: none;
+  border: none;
+  background: url('/ordenaa.png') no-repeat center center;
+  padding: 0%;
+
+}
+
+@media screen and (max-width:700px) {
   .banner {
     height: 30vh; /* Reduce la altura en pantallas pequeñas */
     background-size: contain; /* Cambia a 'contain' para evitar cortes */
@@ -44,8 +55,8 @@
   .spacer{
     display: none;
   }
-  .promocion1, .promocion2{
-    height: 15vh;
+  .promocion1, .promocion2, .promocion3{
+    height: 19vh;
     background-size: contain;
   }
 }

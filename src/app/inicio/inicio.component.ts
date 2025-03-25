@@ -1,8 +1,11 @@
 import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { RouterLink } from '@angular/router';
+
 
 @Component({
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
+   imports: [RouterLink],
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent {
