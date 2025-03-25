@@ -165,6 +165,10 @@ background-color:#5F84A2;
 
 
   @media screen and (max-width:764px) {
+
+    .boton-tarjetas{
+      width: 90%;
+    }
     .banner {
       height: 25vh; /* Reduce la altura en pantallas pequeñas */
       background-size:contain; /* Cambia a 'contain' para evitar cortes */
