@@ -7,7 +7,7 @@
 
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+        <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
       </div>
       <div class="mb-3">
         <label for="email" class="form-label">Correo Electrónico</label>
@@ -52,7 +52,7 @@
       <p>Total de productos: {{productos.length}}</p>
       <p>Total a pagar: ${{ calcularTotal() }} MXN</p>
 
-      <button class="boton-pago" [disabled]="productos.length === 0">Pagar Ahora</button>
+      <button class="boton-pago">Pagar Ahora</button>
     </div>
   </div>
 </div>
