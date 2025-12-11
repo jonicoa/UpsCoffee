@@ -13,8 +13,8 @@ export class InicioComponent {
 
   currentIndex = 0;
   backgrounds = [
-    'url("/UpsCoffee/bagel.png")',
-     'url("/UpsCoffee/chilaquilesrojos.png")',
+    'url("/UpsCoffee/bagel.webp")',
+     'url("/UpsCoffee/chilaquilesrojos.webp")',
     // Agrega más URLs de imágenes según sea necesario
   ];
 

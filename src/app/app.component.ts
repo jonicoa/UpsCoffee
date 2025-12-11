@@ -28,7 +28,7 @@ export class AppComponent implements OnInit  {
   constructor(private router: Router, private carritoService: CarritoService) {
     this.router.events.subscribe((event: Event) => {
       if (event instanceof NavigationEnd) {
-        window.scrollTo({ top: 0, behavior: 'smooth' }); // Desplazamiento suave al inicio
+        window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     });
   }
